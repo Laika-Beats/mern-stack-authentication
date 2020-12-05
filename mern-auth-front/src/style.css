@@ -5,7 +5,7 @@
 }
 
 a {
-    color: lightblue;
+    color: rgb(59, 183, 224);
     text-decoration: unset;
 }
 
@@ -24,4 +24,46 @@ input[type="submit"] {
 
 h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 1em 0;
+}
+
+#header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.274);
+}
+
+#header .title {
+    margin: 0;
+    padding: 0 1rem;
+    color: #fff
+}
+
+#header .auth-options {
+    height: 100%;
+    display: flex;
+    
+}
+
+#header .auth-options button {
+    padding: 0 1rem;
+    background-color: rgba(168, 1, 1, 0.281);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#header .auth-options button:hover {
+    background-color: rgba(43, 1, 1, 0.76);
+}
+
+@media screen and (max-width: 550px) {
+    #header title {
+        font-size: 1.2rem;
+    }
+}
+
+#header .auth-options button {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
 }
